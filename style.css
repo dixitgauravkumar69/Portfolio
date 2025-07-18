@@ -1,0 +1,236 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: rgb(18, 18, 62);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 5%;
+      flex-wrap: wrap;
+    }
+
+    nav .left {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav .right ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      list-style: none;
+    }
+
+    nav .right ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+    }
+
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 60px 5%;
+    }
+
+    .firstsection > div {
+      width: 100%;
+      max-width: 450px;
+      margin: 20px 0;
+    }
+
+    .leftsection {
+      font-size: 1.6rem;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .name {
+      color: cyan;
+    }
+
+    .rightsection img {
+      width: 100%;
+      max-width: 350px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    hr {
+      border: 0.5px solid #444;
+      margin: 20px auto;
+      width: 90%;
+    }
+
+    .secondsection {
+      max-width: 90vw;
+      margin: auto;
+      padding: 40px 0;
+    }
+
+    .secondsection h1 {
+      text-align: center;
+      color: #00ffff;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .box {
+      width: 90vw;
+      margin: 56px auto;
+      position: relative;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .box::before {
+      content: '';
+      position: absolute;
+      top: 50px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: azure;
+      z-index: 0;
+    }
+
+    .verticle {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 160px;
+      margin-bottom: 60px;
+    }
+
+    .verticle::before {
+      content: '';
+      height: 100px;
+      width: 2px;
+      background-color: aliceblue;
+      position: absolute;
+      top: 0;
+    }
+
+    .verticletitle {
+      margin-top: 110px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .verticledes {
+      font-size: 0.8rem;
+      color: #ccc;
+      text-align: center;
+      margin-top: 10px;
+      max-width: 150px;
+    }
+
+    .resume, .github {
+      background-color: rgb(26, 28, 70);
+      color: white;
+      border-radius: 7px;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 10px 20px;
+      margin-top: 15px;
+    }
+
+    footer {
+      background-color: rgb(18, 18, 62);
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #00ffff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive for small screens */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav .right ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+      }
+
+      .leftsection {
+        font-size: 1.3rem;
+        text-align: center;
+      }
+
+      .firstsection {
+        flex-direction: column;
+        padding: 30px 5%;
+      }
+
+      .rightsection img {
+        max-width: 100%;
+      }
+
+      .secondsection h1 {
+        font-size: 1.5rem;
+      }
+
+      .box {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .box::before, .verticle::before {
+        display: none;
+      }
+
+      .verticle {
+        width: 90%;
+        margin-bottom: 40px;
+      }
+
+      .verticletitle {
+        margin-top: 0;
+      }
+
+      .verticledes {
+        margin-top: 10px;
+        color: #aaa;
+      }
+
+      footer {
+        font-size: 0.8rem;
+        padding: 15px 5px;
+      }
+    }
+  

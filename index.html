@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gaurav's Portfolio</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Gaurav's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Past-Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstsection">
+      <div class="leftsection">
+        <span>Hello!</span><br>
+        My name is <span class="name">Gaurav Kumar</span>
+        <div>
+          and I am a <span id="element"></span>
+        </div>
+        <button class="resume">Resume/CV</button>
+        <button class="github">Git-hub</button>
+      </div>
+
+      <div class="rightsection">
+        <img src="bg.png" alt="Profile Image" />
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="secondsection">
+      <h1>Work-Experience</h1>
+      <div class="box">
+        <div class="verticle">
+          <div class="verticletitle">HTML</div>
+          <div class="verticledes">Created semantic and accessible websites using HTML5 standards.</div>
+        </div>
+        <div class="verticle">
+          <div class="verticletitle">CSS</div>
+          <div class="verticledes">Styled pages with Flexbox, Grid, animations and transitions.</div>
+        </div>
+        <div class="verticle">
+          <div class="verticletitle">JavaScript</div>
+          <div class="verticledes">Developed dynamic web apps, DOM manipulation, and event handling.</div>
+        </div>
+        <div class="verticle">
+          <div class="verticletitle">React</div>
+          <div class="verticledes">Built reusable components and integrated REST APIs in React.</div>
+        </div>
+        <div class="verticle">
+          <div class="verticletitle">MongoDB</div>
+          <div class="verticledes">Used MongoDB to store and manage NoSQL data in scalable web apps.</div>
+        </div>
+        <div class="verticle">
+          <div class="verticletitle">Node.js</div>
+          <div class="verticledes">Built backend services and RESTful APIs using Node.js and Express.</div>
+        </div>
+        <div class="verticle">
+          <div class="verticletitle">Express.js</div>
+          <div class="verticledes">Created server-side logic and middleware with Express.js framework.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Made with ❤️ by Gaurav Kumar |
+    <a href="#">LinkedIn</a> |
+    <a href="#">GitHub</a> |
+    <a href="#">Resume</a>
+    <p>&copy; 2025 Gaurav Kumar. All rights reserved.</p>
+  </footer>
+
+  <!-- Typed.js animation -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>Web Developer</i>', '<i>UI Designer</i>', '<i>Programmer</i>'],
+      typeSpeed: 50,
+      loop: true
+    });
+  </script>
+</body>
+</html>
