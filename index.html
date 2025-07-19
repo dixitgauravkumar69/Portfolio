@@ -12,11 +12,11 @@
       <div class="left">Gaurav's Portfolio</div>
       <div class="right">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Past-Projects</a></li>
+          <li><a href="#work-experience">Work-Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#past-projects">Past-Projects</a></li>
         </ul>
       </div>
     </nav>
@@ -30,8 +30,8 @@
         <div>
           and I am a <span id="element"></span>
         </div>
-        <button class="resume">Resume/CV</button>
-        <button class="github">Git-hub</button>
+        <a href="GauravKumarDixit.pdf"><button class="resume">Resume/CV</button></a>
+       <a href="https://github.com/dixitgauravkumar69/"> <button class="github">Git-hub</button></a>
       </div>
 
       <div class="rightsection">
@@ -41,7 +41,7 @@
 
     <hr />
 
-    <section class="secondsection">
+    <section class="secondsection" id="work-experience">
       <h1>Work-Experience</h1>
       <div class="box">
         <div class="verticle">
@@ -74,13 +74,58 @@
         </div>
       </div>
     </section>
+
+    <hr />
+
+<section class="thirdsection" id="past-projects">
+  <h1>Past Projects</h1>
+  <div class="projects">
+    <div class="project-card">
+      <h2>Learning Helper Platform</h2>
+      <p>A MERN-based web platform for teachers to upload courses and quizzes, and for students to track topic-wise progress. It includes role-based dashboards and AI-powered quiz generation from PDFs.</p>
+      <a href="https://github.com/dixitgauravkumar69/Learning-Helping-Platform" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h2>Farmer Helper Platform</h2>
+      <p>A platform to assist farmers with modern farming practices, market updates, and basic AI-based assistance. Built using MongoDB, Express, Node.js, and HBS for real-time support.</p>
+      <a href="https://github.com/dixitgauravkumar69/Farmer-Platform" target="_blank">View on GitHub</a>
+    </div>
+
+     <div class="project-card">
+      <h2>Engineers Prepration</h2>
+      <p>A platform to assist Enginnering students with modern Programing practices, market updates, and basic AI-based assistance. Built using MongoDB, Express, Node.js, and HBS for real-time support.</p>
+      <a href="https://github.com/dixitgauravkumar69/EngineerGuide" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<hr>
+<section class="contact-section" id="contact">
+  <h1>Contact Me</h1>
+  
+  <div class="contact-info">
+    <p><strong>Email:</strong>dixitgauravkumar69@gmail.com</p>
+    <p><strong>Phone:</strong> +91-7471185169</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gaurav69dixit" target="_blank">LinkedIn Profile</a></p>
+  </div>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <input type="text" placeholder="Subject" required />
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
   </main>
 
   <footer>
-    Made with ❤️ by Gaurav Kumar |
-    <a href="#">LinkedIn</a> |
-    <a href="#">GitHub</a> |
-    <a href="#">Resume</a>
+    Made with ❤️ by Gaurav Kumar Dixit |
+    <a href="https://www.linkedin.com/in/gaurav69dixit">LinkedIn</a> |
+    <a href="https://github.com/dixitgauravkumar69/">GitHub</a> |
+    <a href="GauravKumarDixit.pdf">Resume</a>
     <p>&copy; 2025 Gaurav Kumar. All rights reserved.</p>
   </footer>
 
