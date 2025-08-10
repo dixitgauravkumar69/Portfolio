@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gaurav's Portfolio</title>
- <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -15,9 +15,8 @@
           <li><a href="/">Home</a></li>
           <li><a href="#work-experience">Work-Experience</a></li>
           <li><a href="#past-projects">Past-Projects</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
-           
         </ul>
       </div>
     </nav>
@@ -32,7 +31,7 @@
           and I am a <span id="element"></span>
         </div>
         <a href="GauravKumarDixit.pdf"><button class="resume">Resume/CV</button></a>
-       <a href="https://github.com/dixitgauravkumar69/"> <button class="github">Git-hub</button></a>
+        <a href="https://github.com/dixitgauravkumar69/"><button class="github">Git-hub</button></a>
       </div>
 
       <div class="rightsection">
@@ -40,89 +39,97 @@
       </div>
     </section>
 
-     
 
-    
+    <hr>
+<section class="about-section" id="about">
+  <h1>About Me</h1>
+  <div class="about-content">
+    <div class="about-image">
+      <img src="gaurav.jpg" alt="Gaurav Kumar Dixit">
+    </div>
+    <div class="about-text">
+      <p>
+        Hello! I’m <strong>Gaurav Kumar Dixit</strong> — a passionate <strong>Web Developer</strong> with a love for crafting
+        interactive, user-friendly, and visually appealing websites.  
+        I specialize in <strong>HTML, CSS, JavaScript, React, Node.js</strong> and other modern web technologies, aiming to deliver
+        clean, efficient, and impactful solutions.
+      </p>
+      <p>
+        My goal is to combine functionality with creativity, turning ideas into smooth digital experiences.  
+        When I’m not coding, I’m exploring the latest tech trends, sharpening my problem-solving skills, or working on personal projects.
+      </p>
+      <p>
+        🚀 <em>Always learning. Always building.</em>
+      </p>
+    </div>
+  </div>
+</section>
+
+
 
     <hr />
     <section class="secondsection" id="work-experience">
       <h1>Work-Experience</h1>
       <div class="box">
-        <div class="verticle">
-          <div class="verticletitle">HTML</div>
-          <div class="verticledes">Created semantic and accessible websites using HTML5 standards.</div>
-        </div>
-        <div class="verticle">
-          <div class="verticletitle">CSS</div>
-          <div class="verticledes">Styled pages with Flexbox, Grid, animations and transitions.</div>
-        </div>
-        <div class="verticle">
-          <div class="verticletitle">JavaScript</div>
-          <div class="verticledes">Developed dynamic web apps, DOM manipulation, and event handling.</div>
-        </div>
-        <div class="verticle">
-          <div class="verticletitle">React</div>
-          <div class="verticledes">Built reusable components and integrated REST APIs in React.</div>
-        </div>
-        <div class="verticle">
-          <div class="verticletitle">MongoDB</div>
-          <div class="verticledes">Used MongoDB to store and manage NoSQL data in scalable web apps.</div>
-        </div>
-        <div class="verticle">
-          <div class="verticletitle">Node.js</div>
-          <div class="verticledes">Built backend services and RESTful APIs using Node.js and Express.</div>
-        </div>
-        <div class="verticle">
-          <div class="verticletitle">Express.js</div>
-          <div class="verticledes">Created server-side logic and middleware with Express.js framework.</div>
-        </div>
+        <div class="verticle"><div class="verticletitle">HTML</div><div class="verticledes">Created semantic and accessible websites using HTML5 standards.</div></div>
+        <div class="verticle"><div class="verticletitle">CSS</div><div class="verticledes">Styled pages with Flexbox, Grid, animations and transitions.</div></div>
+        <div class="verticle"><div class="verticletitle">JavaScript</div><div class="verticledes">Developed dynamic web apps, DOM manipulation, and event handling.</div></div>
+        <div class="verticle"><div class="verticletitle">React</div><div class="verticledes">Built reusable components and integrated REST APIs in React.</div></div>
+        <div class="verticle"><div class="verticletitle">MongoDB</div><div class="verticledes">Used MongoDB to store and manage NoSQL data in scalable web apps.</div></div>
+        <div class="verticle"><div class="verticletitle">Node.js</div><div class="verticledes">Built backend services and RESTful APIs using Node.js and Express.</div></div>
+        <div class="verticle"><div class="verticletitle">Express.js</div><div class="verticledes">Created server-side logic and middleware with Express.js framework.</div></div>
       </div>
     </section>
 
     <hr />
-
-<section class="thirdsection" id="past-projects">
-  <h1>Past Projects</h1>
+    <section class="thirdsection" id="past-projects">
+  <h1>My Projects</h1>
   <div class="projects">
+
     <div class="project-card">
-      <h2>Learning Helper Platform</h2>
-      <p>A MERN-based web platform for teachers to upload courses and quizzes, and for students to track topic-wise progress. It includes role-based dashboards and AI-powered quiz generation from PDFs.</p>
-      <a href="https://github.com/dixitgauravkumar69/Learning-Helping-Platform" target="_blank">View on GitHub</a>
+      <img src="Screenshot1.png" alt="Project 1" class="project-img">
+      <h2>Engineer guide </h2>
+      <p>Teachers can upload courses, track progress, and auto-generate quizzes.</p>
+      <a href="https://github.com/dixitgauravkumar69/EngineerGuide" class="btn">View Project</a>
     </div>
 
     <div class="project-card">
-      <h2>Farmer Helper Platform</h2>
-      <p>A platform to assist farmers with modern farming practices, market updates, and basic AI-based assistance. Built using MongoDB, Express, Node.js, and HBS for real-time support.</p>
-      <a href="https://github.com/dixitgauravkumar69/Farmer-Platform" target="_blank">View on GitHub</a>
+      <img src="Screenshot2.png" alt="Project 2" class="project-img">
+      <h2>Learning Helping Platform</h2>
+      <p>Instant quiz creation from PDF uploads with AI analysis.</p>
+      <a href="https://github.com/dixitgauravkumar69/Learning-Helping-Platform" class="btn">View Project</a>
     </div>
 
-     <div class="project-card">
-      <h2>Engineers Prepration</h2>
-      <p>A platform to assist Enginnering students with modern Programing practices, market updates, and basic AI-based assistance. Built using MongoDB, Express, Node.js, and HBS for real-time support.</p>
-      <a href="https://github.com/dixitgauravkumar69/EngineerGuide" target="_blank">View on GitHub</a>
+    <div class="project-card">
+      <img src="Screenshot3.png" alt="Project 3" class="project-img">
+      <h2>Farmer Helping Platform</h2>
+      <p>Farmer and buyer both are in same place can contact to each other.</p>
+      <a href="https://github.com/dixitgauravkumar69/EngineerGuide" class="btn">View Project</a>
     </div>
+
+    
+
   </div>
 </section>
 
-<hr>
-<section class="contact-section" id="contact">
-  <h1>Contact Me</h1>
-  
-  <div class="contact-info">
-    <p><strong>Email:</strong>dixitgauravkumar69@gmail.com</p>
-    <p><strong>Phone:</strong> +91-7471185169</p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gaurav-dixit-887195300?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn Profile</a></p>
-  </div>
 
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <input type="text" placeholder="Subject" required />
-    <textarea rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+    <hr>
+    <section class="contact-section" id="contact">
+      <h1>Contact Me</h1>
+      <div class="contact-info">
+        <p><strong>Email:</strong> dixitgauravkumar69@gmail.com</p>
+        <p><strong>Phone:</strong> +91-7471185169</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gaurav-dixit-887195300" target="_blank">LinkedIn Profile</a></p>
+      </div>
 
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Subject" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
   </main>
 
   <footer>
