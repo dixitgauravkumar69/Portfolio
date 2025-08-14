@@ -1,54 +1,52 @@
-// Typing animations with gradient color fix
-const welcomeTyped = new Typed("#visitor-welcome", {
-  strings: [
-    "Welcome to my portfolio!",
-    "Glad you're here 😊",
-    "Explore my work below 👇"
-  ],
-  typeSpeed: 50,
-  backSpeed: 25,
-  loop: true,
-  onStringTyped: function () {
-    // Apply gradient styling each time text changes
-    const el = document.getElementById("visitor-welcome");
-    el.style.background = "linear-gradient(90deg, #0077ff, #00ff7f)";
-    el.style.backgroundClip = "text";
-    el.style.webkitBackgroundClip = "text"; // For Chrome/Safari
-    el.style.color = "transparent";
+// Typing effect with color + blinking cursor
+function typeText(elementId, texts, typingSpeed = 100, backSpeed = 50, pauseTime = 1500) {
+  let textIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  const element = document.getElementById(elementId);
+
+  // Create span for text & cursor
+  element.innerHTML = `<span class="typing-text"></span><span class="cursor"></span>`;
+  const textSpan = element.querySelector(".typing-text");
+
+  function type() {
+    const currentText = texts[textIndex];
+
+    if (isDeleting) {
+      charIndex--;
+    } else {
+      charIndex++;
+    }
+
+    textSpan.textContent = currentText.substring(0, charIndex);
+
+    let delay = isDeleting ? backSpeed : typingSpeed;
+
+    if (!isDeleting && charIndex === currentText.length) {
+      delay = pauseTime;
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      textIndex = (textIndex + 1) % texts.length;
+    }
+
+    setTimeout(type, delay);
   }
-});
 
-// Second typing animation for role titles
-new Typed('#element', {
-  strings: [
-    '<i>Web Developer</i>',
-    '<i>UI Designer</i>',
-    '<i>Programmer</i>'
-  ],
-  typeSpeed: 50,
-  loop: true
-});
+  type();
+}
 
-// Dark Mode Toggle
-const toggle = document.getElementById("theme-toggle");
-toggle.style.position = "fixed";
-toggle.style.top = "15px";
-toggle.style.right = "15px";
-toggle.style.zIndex = "9999";
+// Run typing animations
+typeText("visitor-welcome", [
+  "Welcome to my portfolio!",
+  "Glad you're here 😊",
+  "Explore my work below 👇"
+]);
 
-toggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-  toggle.textContent = document.body.classList.contains("dark")
-    ? "☀️ Light Mode"
-    : "🌙 Dark Mode";
-  document.body.style.transition = "background-color 0.3s, color 0.3s";
-});
+typeText("element", [
+  "Web Developer",
+  "UI Designer",
+  "Programmer"
+]);
 
-// Back to Top Button
-const backToTop = document.getElementById("back-to-top");
-window.addEventListener("scroll", () => {
-  backToTop.style.display = window.scrollY > 200 ? "block" : "none";
-});
-backToTop.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
+

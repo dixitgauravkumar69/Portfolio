@@ -42,6 +42,8 @@
       font-weight: 500;
     }
 
+  
+
     .firstsection {
       display: flex;
       justify-content: space-around;
@@ -533,12 +535,37 @@
 /* Welcome Animation */
 .welcome-container {
   text-align: center;
-  font-size: 1.2rem;
-  margin-top: 10px;
-  background: linear-gradient(90deg, #0077ff, #00ff7f);
+  font-size: 1.4rem;
+  margin-top: 15px;
+}
+
+.welcome-container .typing-text {
+  font-weight: bold;
+  background: linear-gradient(270deg, #0077ff, #00ff7f, #ff00aa);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
   background-clip: text;
-  -webkit-background-clip: text; /* Chrome/Safari */
   color: transparent;
+  animation: gradientMove 6s ease infinite;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: currentColor;
+  margin-left: 3px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
 }
 
 /* Skills Progress */
@@ -560,32 +587,16 @@
   from { width: 0; }
 }
 
-/* Dark Mode */
-body.dark {
-  background-color: #121212;
-  color: white;
-}
-body.dark nav, body.dark footer {
-  background: #1f1f1f;
-}
 
-/* Theme Toggle Button */
-#theme-toggle {
-  margin-left: 15px;
-  background: #0077ff;
-  color: white;
-  border: none;
-  padding: 5px 8px;
-  border-radius: 5px;
-  cursor: pointer;
-}
+
+
 
 /* Back to Top Button */
 #back-to-top {
   position: fixed;
   bottom: 30px;
-  right: 30px;
-  background: #0077ff;
+  left: 20px;
+  background: linear-gradient(45deg, #0077ff, #00ff7f);
   color: white;
   border: none;
   padding: 10px 15px;
@@ -593,4 +604,9 @@ body.dark nav, body.dark footer {
   border-radius: 50%;
   display: none;
   cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+#back-to-top:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #00ff7f, #0077ff);
 }
