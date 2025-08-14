@@ -528,3 +528,69 @@
     text-align: center;
   }
 }
+
+
+/* Welcome Animation */
+.welcome-container {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #0077ff, #00ff7f);
+  background-clip: text;
+  -webkit-background-clip: text; /* Chrome/Safari */
+  color: transparent;
+}
+
+/* Skills Progress */
+.skill {
+  margin: 10px 0;
+}
+.progress {
+  background: #ddd;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.progress-bar {
+  height: 10px;
+  background: linear-gradient(90deg, #00ff7f, #0077ff);
+  animation: grow 2s ease-out forwards;
+}
+@keyframes grow {
+  from { width: 0; }
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+body.dark nav, body.dark footer {
+  background: #1f1f1f;
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+  margin-left: 15px;
+  background: #0077ff;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Back to Top Button */
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #0077ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+}
